@@ -7,7 +7,7 @@ ${browser}   Chrome
 ${url}       https://automationplayground.com/crm/
 
 *** Test Cases ***
-Data-Driven Test Case
+DDT- Test inlog
     [Documentation]    Perform login with different input arguments
     [Tags]    DataDriven
     [Template]    Run Test With Different Arguments
