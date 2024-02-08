@@ -4,13 +4,13 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${browser}   Chrome
-${url}       automationplayground.com
+${url}       https://automationplayground.com/crm/
 
 *** Test Cases ***
-
-Create new customer Test Case
+BDD-Create new customer 
     [Documentation]    Perform different scenarios based on input arguments
-    [Tags]    DataDriven
-    [Template]
+    [Tags]    Behavior driven test
+
+    Given User opens the browser
 
 Add new customer
