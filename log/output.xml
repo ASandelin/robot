@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-08T18:52:26.348008" rpa="false" schemaversion="5">
+<suite id="s1" name="Ovning2RobotSelenium" source="C:\Users\artur\Documents\PycharmProjects\robot\Ovning2RobotSelenium.robot">
+<test id="s1-t1" name="BDD-Create new customer" line="10">
+<kw name="Given User opens the browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-08T18:52:26.635773" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/crm/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-08T18:52:26.634760" elapsed="2.581893"/>
+</kw>
+<status status="PASS" start="2024-02-08T18:52:26.634760" elapsed="2.582894"/>
+</kw>
+<kw name="When User navigates to the customerpage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-08T18:52:29.218424" level="INFO">Opening url 'https://automationplayground.com/crm/customers.html?email-name=example%40gmail.com&amp;password-name=efw&amp;submit-name='</msg>
+<arg>https://automationplayground.com/crm/customers.html?email-name=example%40gmail.com&amp;password-name=efw&amp;submit-name=</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-08T18:52:29.217654" elapsed="1.367330"/>
+</kw>
+<status status="PASS" start="2024-02-08T18:52:29.217654" elapsed="1.368339"/>
+</kw>
+<kw name="And User clicks the New Customer button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T18:52:30.587024" level="INFO">Clicking element '//a[@id='new-customer']'.</msg>
+<arg>//a[@id='new-customer']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T18:52:30.587024" elapsed="0.643906"/>
+</kw>
+<status status="PASS" start="2024-02-08T18:52:30.585993" elapsed="0.644937"/>
+</kw>
+<kw name="Then The new customer form should be visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath= //*[@id="loginform"]/div/div/div/div/h2</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T18:52:31.231933" elapsed="0.026726"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-02-08T18:52:31.281594" level="INFO">Element 'xpath=//*[@id="loginform"]/div/div/div/div/h2' is displayed.</msg>
+<arg>xpath=//*[@id="loginform"]/div/div/div/div/h2</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T18:52:31.258962" elapsed="0.022632"/>
+</kw>
+<status status="PASS" start="2024-02-08T18:52:31.231933" elapsed="0.049661"/>
+</kw>
+<doc>Perform different scenarios based on input arguments</doc>
+<tag>Behavior driven test</tag>
+<status status="PASS" start="2024-02-08T18:52:26.633494" elapsed="4.648100"/>
+</test>
+<status status="PASS" start="2024-02-08T18:52:26.351006" elapsed="4.931588"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Behavior driven test</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ovning2RobotSelenium">Ovning2RobotSelenium</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
