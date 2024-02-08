@@ -4,27 +4,29 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${browser}   Chrome
-${url}       automationplayground.com
+${url}       https://automationplayground.com/crm/
 
 *** Test Cases ***
 Data-Driven Test Case
-    [Documentation]    Perform different scenarios based on input arguments
+    [Documentation]    Perform login with different input arguments
     [Tags]    DataDriven
     [Template]    Run Test With Different Arguments
-    Login    testuser1   pass1
-    Login    testuser2   pass2
+    testuser1@mail.com   pass1
+    testuser2@mail.com   pass2
 
 *** Keywords ***
 Run Test With Different Arguments
     [Arguments]    ${username}     ${password}
     Open Browser    ${url}    ${browser}
-    Input Text    //input[@id='username']    ${username}
-    Input Text    //input[@id='password']    ${password}
-    Click Button    //button[@id='loginBtn']
+    Click Element    //*[@id="SignIn"]
+    Input Text    //*[@id="email-id"]    ${username}
+    Input Text    //*[@id="password"]    ${password}
+    Click Element    //*[@id="submit-id"]
     # Add more test steps as needed
+    Wait Until Element Is Visible    xpath=/html/body/nav/ul/li/a    timeout=10
+    Element Should Be Visible    xpath=//a[@class='nav-link' and @href='sign-out.html' and text()='Sign Out']
+    Page Should Contain Element    xpath=/html/body/nav/ul/li/a
     Close Browser
 
-Login
-    [Arguments]    ${username}    ${password}
-    Run Keyword   Run Test With Different Arguments ${username}   ${password}
+
 

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-08T15:43:22.511122" rpa="false" schemaversion="5">
+<suite id="s1" name="Ovning2RobotSelenium" source="C:\Users\artur\Documents\PycharmProjects\robot\Ovning2RobotSelenium.robot">
+<test id="s1-t1" name="Data-Driven Test Case" line="10">
+<kw name="Run Test With Different Arguments">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:22.794444" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/crm/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-08T15:43:22.794444" elapsed="6.930292"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:29.725736" level="INFO">Clicking element '//*[@id="SignIn"]'.</msg>
+<arg>//*[@id="SignIn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T15:43:29.724736" elapsed="0.600103"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:30.325844" level="INFO">Typing text 'testuser1@mail.com' into text field '//*[@id="email-id"]'.</msg>
+<arg>//*[@id="email-id"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T15:43:30.324839" elapsed="0.104926"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:30.430768" level="INFO">Typing text 'pass1' into text field '//*[@id="password"]'.</msg>
+<arg>//*[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T15:43:30.430768" elapsed="0.090274"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:30.521042" level="INFO">Clicking element '//*[@id="submit-id"]'.</msg>
+<arg>//*[@id="submit-id"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T15:43:30.521042" elapsed="0.221684"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/nav/ul/li/a</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T15:43:30.744666" elapsed="0.556762"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:31.331674" level="INFO">Element 'xpath=//a[@class='nav-link' and @href='sign-out.html' and text()='Sign Out']' is displayed.</msg>
+<arg>xpath=//a[@class='nav-link' and @href='sign-out.html' and text()='Sign Out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T15:43:31.301428" elapsed="0.030246"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:31.340675" level="INFO">Current page contains element 'xpath=/html/body/nav/ul/li/a'.</msg>
+<arg>xpath=/html/body/nav/ul/li/a</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-02-08T15:43:31.331674" elapsed="0.009001"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-08T15:43:31.340675" elapsed="2.224046"/>
+</kw>
+<arg>testuser1@mail.com</arg>
+<arg>pass1</arg>
+<status status="PASS" start="2024-02-08T15:43:22.793446" elapsed="10.771275"/>
+</kw>
+<kw name="Run Test With Different Arguments">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:33.567113" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/crm/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-08T15:43:33.566514" elapsed="2.873023"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:36.440574" level="INFO">Clicking element '//*[@id="SignIn"]'.</msg>
+<arg>//*[@id="SignIn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T15:43:36.439537" elapsed="0.584860"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:37.024397" level="INFO">Typing text 'testuser2@mail.com' into text field '//*[@id="email-id"]'.</msg>
+<arg>//*[@id="email-id"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T15:43:37.024397" elapsed="0.107867"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:37.133262" level="INFO">Typing text 'pass2' into text field '//*[@id="password"]'.</msg>
+<arg>//*[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T15:43:37.133262" elapsed="0.090181"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:37.223443" level="INFO">Clicking element '//*[@id="submit-id"]'.</msg>
+<arg>//*[@id="submit-id"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T15:43:37.223443" elapsed="0.213394"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/nav/ul/li/a</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T15:43:37.436837" elapsed="0.631391"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:38.093224" level="INFO">Element 'xpath=//a[@class='nav-link' and @href='sign-out.html' and text()='Sign Out']' is displayed.</msg>
+<arg>xpath=//a[@class='nav-link' and @href='sign-out.html' and text()='Sign Out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T15:43:38.069264" elapsed="0.023960"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T15:43:38.102826" level="INFO">Current page contains element 'xpath=/html/body/nav/ul/li/a'.</msg>
+<arg>xpath=/html/body/nav/ul/li/a</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-02-08T15:43:38.093224" elapsed="0.010583"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-08T15:43:38.103807" elapsed="2.125109"/>
+</kw>
+<arg>testuser2@mail.com</arg>
+<arg>pass2</arg>
+<status status="PASS" start="2024-02-08T15:43:33.565722" elapsed="6.664203"/>
+</kw>
+<doc>Perform login with different input arguments</doc>
+<tag>DataDriven</tag>
+<status status="PASS" start="2024-02-08T15:43:22.792444" elapsed="17.438478"/>
+</test>
+<status status="PASS" start="2024-02-08T15:43:22.514122" elapsed="17.718791"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">DataDriven</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ovning2RobotSelenium">Ovning2RobotSelenium</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

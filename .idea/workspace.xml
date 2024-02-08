@@ -23,10 +23,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Robot Framework.run [Data-Driven Test Case].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "artur",
-    "last_opened_file_path": "C:/Users/artur/Documents/PycharmProjects/robot"
+    "last_opened_file_path": "C:/Users/artur/Documents/PycharmProjects/pythonProject1"
   }
 }]]></component>
   <component name="SharedIndexes">
